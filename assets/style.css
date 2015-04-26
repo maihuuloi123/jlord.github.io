@@ -60,10 +60,15 @@ header a:hover {color: #357efc; border-bottom: 1px solid #357efc;}
   top: 330px;}
 
 .main-container {max-width: 900px; margin: 0 auto; padding: 50px 0;}
-#content {background: #fff; padding: 68px;}
+#content {background: #fff; padding: 108px;}
 .meta {font-family: Source Sans Pro, Franklin Gothic Book, Arial, sans-serif; color: #777;}
 
 .latest-post-content {padding-bottom: 24px;}
+
+.latest-post-content h2, .latest-post-content h3 {
+  font-weight: normal;
+  font-size: 18px;
+}
 
 /* archive, about, work ----------------------------------------------------- */
 
@@ -120,8 +125,39 @@ padding-right: 15px;}
 #links + ul li:hover {background: #357efc;}
 #links + ul li:hover a {color: #fff;}
 
-.post-body h1 {font-size: 26px; border-top: 1px solid #EFEFEF; border-bottom: 1px solid #EFEFEF; padding: 18px 0; text-align: center; line-height: 1.6; margin: 40px 0; font-style: italic; font-weight: 400;}
+.post-body h1 {font-size: 26px; border-top: 1px solid #EFEFEF; border-bottom: 1px solid #EFEFEF;
+  padding: 18px 0; text-align: center; line-height: 1.6; margin: 40px -20px; font-style: italic; font-weight: 400;}
+.post-body h2 {text-align: center; padding: 20px 0; border-bottom: 3px solid #357efc;
+  margin-bottom: 40px; color: #357efc; margin-top: 82px; font-size: 2em;}
+.post-body h2:first-of-type {margin-top: 0;}
+.post-body h3 {padding-top: 32px;}
 
+/* if first thing is em, it's a note/disclaimer */
+/*p em:first-child {background-color: #f3f3f3; color: #777;}*/
+
+/*p:first-child > em {
+  color: #fff;
+  background: #357efc;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}*/
+
+.post-body img {margin: 0 -20px 0 -20px;}
+
+/* em after an image is a caption */
+img + em {font-family: 'Source Sans Pro'; font-size: 11px; color: #c6c6c6;
+letter-spacing: .1em; font-weight: 300; text-transform: uppercase; font-style: normal;}
+
+.photo-group-four img {width: 24.49%; float: left; box-sizing: border-box;}
+.photo-group-three img {width: 32.9%; float: left; box-sizing: border-box;}
+.photo-group-two img {width: 49.6%%; float: left; box-sizing: border-box;}
+
+.photo-group {position: relative; width: 100%; max-width: 900px; margin: 0 auto; box-sizing: border-box; }
+}
 
 /* PAGINATION --------------------------------------------------------------- */
 
@@ -180,6 +216,10 @@ animation-fill-mode: both;
   .sideways {display: none;}
 }
 
+@media (max-width: 750px) {
+  #content {padding: 68px;}
+}
+
 @media (max-width: 550px) {
   .main-container {padding: 20px 0;}
   #content {padding: 20px;}
@@ -191,6 +231,7 @@ animation-fill-mode: both;
   #instagram {max-height: 176px; overflow: hidden;}
   .instaImgCirc {float: none; text-align: center;}
   .instaImgCirc + .instaImgCirc {padding-left: 0;}
+  .post-body h1 {margin-right: 0; margin-left: 0;}
 }
 
 @media (max-width: 1024px) {
