@@ -80,7 +80,7 @@ header a:hover {color: #357efc; border-bottom: 1px solid #357efc;}
 #instagram {margin: 0 auto; overflow: auto; padding-bottom: 20px;}
 .instaImgCirc {float: left; padding-top: 15px;}
 .instaImgCirc + .instaImgCirc {padding-left: 20px;}
-.instaImgCirc img {border-radius: 1000px; width: 156px; }
+.instaImgCirc img {border-radius: 1000px; width: 176px; }
 .instaImgCirc a {border: none;}
 
 #tweet p {font-weight: 500; font-size: 20px; margin: 0 auto;
